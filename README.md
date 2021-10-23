@@ -1,2 +1,2 @@
 # SkiMino-Website
-SkiMino的Website&amp;Docs
+SkiMino的Website
