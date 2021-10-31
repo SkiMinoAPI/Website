@@ -1,57 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkiMinoAPI</title>
+    <title>SkiMinoAPI Docs</title>
     <link rel="shortcut icon" href="https://skimino.cf/favicon.ico">
-    <style>
-      body {
-        background-image: url("https://hus-v.skimino.cf/BingImage");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        margin: 0;
-      }
-
-      #first-screen {
-        height: 20px;
-        vertical-align: middle;
-        line-height: 20px; 
-      }
-      h1 {
-        color: white;
-        font-size:60px;
-      }
-      #h2 {
-        color: darkgray;
-      }
-      #docs {
-        height: 40px;
-        font-size:25px;
-        margin: 5px;
-        color: #5c5b5b;
-        border: 3px solid #4fcdff;
-        background-color: #9aebff;
-      }
-      #code {
-        height: 40px;
-        font-size:25px;
-        margin: 5px;
-        color: white;
-        border: 3px solid black;
-        background-color: #808080;
-      }
-      body {
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./main.css" />
   </head>
-  <body>
-    <div id="first-screen">
-      <br /><br /><br /><br /><br /><br />
-      <h1>SkiMinoAPI</h1>
-      <p id="h2">一个为社区而生的免费，开源的API</p>
-      <a href="https://docs.skimino.cf/"><button id="docs">API文档</button></a><a href="https://github.com/XMSMApi"><button id="code">GitHub</button></a>
+  <body style="background-color: #FCFCFC;">
+    <header>
+      <h3 id="header"><a href="/">首页</a> &nbsp; <a href="https://github
+.com/XMSMApi">GitHub</a> &nbsp; <a href="https://www.huahuo-cn.tk">作者Blog</a> &nbsp; <i><button onclick="postopen()" style="margin: 0px;background-color: white;"><img src="./top-menu.png" height="25px" width="25px" /></button></i></h3>
+      <hr />
+    </header>
+    <div id="left-screen">
+      <a href="./"><b>前言</b></a>
+      <hr />
+      <a href="?post=qr">QR码生成</a>
+      <hr />
+      <a href="?post=bingimage">每日Bing图</a>
+      <hr />
+      <a href="?post=mcsi">Minecraft服务器检测</a>
+      <hr />
+      <a href="?post=catgirl">随机猫娘图</a>
     </div>
+    <div class="docs-main"><iframe id="iframe" class="iframe" src="./loading.html"></iframe></div>
   </body>
+  <script src="./postlist.js"></script>
 </html>
