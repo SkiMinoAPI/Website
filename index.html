@@ -1,4 +1,4 @@
-'<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
     <head>
         <meta charset="UTF-8" />
@@ -13,12 +13,13 @@
                 background-color: white;
             }
             .first-screen {
-                position: absolute;
-                height: 100%;
+                position: relative;
+                height: calc(100vh);
                 width: 100%;
                 background: url('https://img.skimino.cf/bg.png');
                 background-repeat: no-repeat;
-                background-size: 100%;
+                background-size: cover;
+                background-height: 100%;
             }
             .first-screen h1 {
                 position: absolute;
@@ -49,6 +50,52 @@
                 text-align: center;
                 vertical-align: 50%;
                 border: solid 4px;
+            }
+            .b2, .b3 {
+                position: relative;
+                padding-top: 100px;
+                padding-bottom: 100px;
+                text-align: center;
+            }
+            .b2 button, .b2 a {
+                position: relative;
+                text-decoration: none;
+                transform: translate(0,10px);
+                outline: none;
+                border: none;
+                font-size: 25px;
+                background: #00CCFF;
+                background-size: 400%;
+                padding: 5px;
+                color: white;
+                border-radius: 3px;
+                text-align: center;
+                vertical-align: 50%;
+                width: 65%;
+            }
+            .down {
+                margin-top: 15px;
+                
+            }
+            .b3 {
+                background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #ff2eb9, #1303f4, #03a9f4);
+                background-size: 400%;
+            }
+            .b3 button, .b3 a {
+                position: relative;
+                text-decoration: none;
+                transform: translate(0,10px);
+                outline: none;
+                border: none;
+                font-size: 25px;
+                background: yellow;
+                background-size: 400%;
+                padding: 5px;
+                color: black;
+                border-radius: 3px;
+                text-align: center;
+                vertical-align: 50%;
+                width: 65%;
             }
             /*
             .btnlist a::before {
@@ -85,7 +132,19 @@
             <div class="btnlist">
                <a class="btn" href="https://docs.skimino.cf" style="left: 15%;color: skyblue;">Docs</a>
                <a class="btn" href="https://tools.skimino.cf" style="left: 28%;color: gray;">Tools</a>
-               <a class="btn" href="https://t.xmdisk.ga/SdGfKg" style="left: 41%;color: yellow;">Group</a>
+               <a class="btn" href="http://t.xmdisk.ga/SdGfKg" style="left: 41%;color: purple;">开黑啦</a>
+            </div>
+        </div>
+        <div class="down">
+            <div class="b2">
+                <h1>SkiMinoAPI</h1>
+                <p>SkiMinoAPI提供了所需的Web API，并且持续更新中</p>
+                <a href="https://docs.skimino.cf?ls=api"><button>Docs</button></a>
+            </div>
+            <div class="b3">
+                <h1>SkiMino Tools</h1>
+                <p>SkiMino提供各种工具</p>
+                <a href="https://tools.skimino.cf"><button>Tools</button></a>
             </div>
         </div>
     </body>
