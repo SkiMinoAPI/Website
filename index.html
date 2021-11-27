@@ -19,30 +19,34 @@
                 background: url('https://img.skimino.cf/bg.png');
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-height: 100%;
             }
-            .first-screen h1 {
+            .first-screen .logo {
                 position: absolute;
-                left: 20%;
+                left: 230px;
                 top: 150px;
-                font-size: 60px;
+                height: 120px;
+                width: 360px;
+                background: url('https://img.skimino.cf/logo.png');
+                background-repeat: no-repeat;
+                background-size: cover;
                 transform: translate(-50%,-50%);
             }
             .first-screen span {
                 position: absolute;
-                left: 300px;
-                top: 210px;
+                left: 280px;
+                top: 250px;
                 font-size: 30px;
                 transform: translate(-50%,-50%);
                 color: white;
             }
+            @media screen and (max-width: 600px){.first-screen span{left: 220px;}}
             .btn {
                 text-decoration: none;
                 position: absolute;
                 top: 350px;
                 transform: translate(-50%,-50%);
                 font-size: 25px;
-                background: #fffffffff;
+                background: rgba(141, 141, 141, 0.795);
                 background-size: 400%;
                 width: 100px;
                 height: 40px;
@@ -53,8 +57,8 @@
             }
             .b2, .b3 {
                 position: relative;
-                padding-top: 100px;
-                padding-bottom: 100px;
+                padding-top: 350px;
+                padding-bottom: 350px;
                 text-align: center;
             }
             .b2 button, .b2 a {
@@ -97,6 +101,16 @@
                 vertical-align: 50%;
                 width: 65%;
             }
+            ::-webkit-scrollbar {
+                background: rgb(255, 255, 255);
+                width: 10px;
+                height: 10px;
+                border:1px rgb(255, 255, 255) solid;
+                border-radius: 2px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background:rgb(109, 109, 109);
+            }
             /*
             .btnlist a::before {
                 content: "";
@@ -105,7 +119,7 @@
                 right: -5px;
                 top: -5px;
                 bottom: -5px;
-                background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #ff2eb9, #1303f4, #03a9f4);
+                background: linear-gradient(100deg, #03a9f4, #f441a5, #ffeb3b, #ff2eb9, #1303f4, #03a9f4);
                 background-size: 400%;
                 border-radius: 50px;
                 filter: blur(8px);
@@ -127,18 +141,19 @@
     </head>
     <body>
         <div class="first-screen">
-            <h1>SkiMino</h1>
+            <div class="logo"></div>
             <span>Hello, world! Hello, SkiMino!</span>
             <div class="btnlist">
-               <a class="btn" href="https://docs.skimino.cf" style="left: 15%;color: skyblue;">Docs</a>
-               <a class="btn" href="https://tools.skimino.cf" style="left: 28%;color: gray;">Tools</a>
-               <a class="btn" href="http://t.xmdisk.ga/SdGfKg" style="left: 41%;color: purple;">开黑啦</a>
+                <a class="btn" href="https://docs.skimino.cf" style="left: 140px;color: skyblue;">Docs</a>
+                <a class="btn" href="https://tools.skimino.cf" style="left: 260px;color: rgb(201, 201, 201);">Tools</a>
+                <a class="btn" href="http://t.xmdisk.ga/SdGfKg" style="left: 380px;color: rgb(111, 102, 243);">开黑啦</a>
             </div>
+            <iframe src="https://streamkit.kaiheila.cn/overlay/status/8883462496822779?show_online=true&show_icon=true&show_invite=true&invite_mode=link&invite_link=https%3A%2F%2Fkaihei.co%2FkqfStm&open_id=&theme=light" height="64px" width="320px" style="border: none;margin-top: 400px;margin-left: 90px;border-radius: 8px;outline: none;"></iframe>
         </div>
         <div class="down">
             <div class="b2">
-                <h1>SkiMinoAPI</h1>
-                <p>SkiMinoAPI提供了所需的Web API，并且持续更新中</p>
+                <h1>SkiMino API</h1>
+                <p>SkiMino API提供了所需的Web API，并且持续更新中</p>
                 <a href="https://docs.skimino.cf?ls=api"><button>Docs</button></a>
             </div>
             <div class="b3">
