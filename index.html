@@ -1,53 +1,92 @@
-<!doctype html>
+'<!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <title>SkiMinoAPI</title>
-    <style>
-      body {
-        background-image: url("https://img.skimino.cf/bg.png");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        margin: 0;
-      }
-
-      #first-screen {
-        height: 20px;
-        vertical-align: middle;
-        line-height: 20px; 
-      }
-      h1 {
-        color: white;
-        font-size:60px;
-      }
-      #h2 {
-        color: darkgray;
-      }
-      #docs {
-        font-size:25px;
-        margin: 5px;
-        color: #5c5b5b;
-        border: 3px solid #4fcdff94;
-        background-color: #9aebff80;
-      }
-      #code {
-        font-size:25px;
-        margin: 5px;
-        color: white;
-        border: 3px solid #0000006b;
-        background-color: #80808098;
-      }
-      body {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="first-screen">
-      <br /><br /><br /><br /><br /><br />
-      <h1>SkiMinoAPI</h1>
-      <p id="h2">一个为社区而生的免费，开源的API</p>
-      <a href="https://docs.skimino.cf/"><button id="docs">API文档</button></a><a href="https://github.com/XMSMApi/SkiMino"><button id="code">开源仓库</button></a>
-    </div>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SkiMino</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background-color: white;
+            }
+            .first-screen {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background: url('https://img.skimino.cf/bg.png');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            .first-screen h1 {
+                position: absolute;
+                left: 20%;
+                top: 150px;
+                font-size: 60px;
+                transform: translate(-50%,-50%);
+            }
+            .first-screen span {
+                position: absolute;
+                left: 300px;
+                top: 210px;
+                font-size: 30px;
+                transform: translate(-50%,-50%);
+                color: white;
+            }
+            .btn {
+                text-decoration: none;
+                position: absolute;
+                top: 350px;
+                transform: translate(-50%,-50%);
+                font-size: 25px;
+                background: #fffffffff;
+                background-size: 400%;
+                width: 100px;
+                height: 40px;
+                border-radius: 50px;
+                text-align: center;
+                vertical-align: 50%;
+                border: solid 4px;
+            }
+            /*
+            .btnlist a::before {
+                content: "";
+                position: absolute;
+                left: -5px;
+                right: -5px;
+                top: -5px;
+                bottom: -5px;
+                background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #ff2eb9, #1303f4, #03a9f4);
+                background-size: 400%;
+                border-radius: 50px;
+                filter: blur(8px);
+                z-index: -1;
+            }
+            .btnlist a:hover {
+                animation: btn 20s infinite;
+            }
+            .btnlist a:hover::before{
+                animation: btn 20s infinite;
+            }
+            @keyframes btn {
+                100%{
+                    background-position: -400% 0;
+                }
+            }
+            */
+        </style>
+    </head>
+    <body>
+        <div class="first-screen">
+            <h1>SkiMino</h1>
+            <span>Hello, world! Hello, SkiMino!</span>
+            <div class="btnlist">
+               <a class="btn" href="https://docs.skimino.cf" style="left: 15%;color: skyblue";>Docs</a>
+               <a class="btn" href="https://tools.skimino.cf" style="left: 28%;color: gray;">Tools</a>
+               <a class="btn" href="https://t.xmdisk.ga/SdGfKg" style="left: 41%;color: yellow;">Group</a>
+            </div>
+        </div>
+    </body>
 </html>
